@@ -17,10 +17,10 @@ def welcome():
 	print('Menjual Kue dengan tekstur lembur dan tentunya nikmat\n')
 	print('===============================================================')
 	print(' ')
+	time.sleep(2)
 	daftar_kue()
 
 def daftar_kue():
-	clear_screen()
 	print('')
 	print("[1] Kue Keju Rp. 6000")
 	print("[2] Kue Coklat Rp. 3500\n")
@@ -76,6 +76,7 @@ def daftar_kue():
 		print("Anda Membeli Kue Keju Sebanyak\t\t :",jumlahkue)
 	elif kue=='2':
 		print("Anda Membeli Kue Coklat Sebanyak\t : ",jumlahkue)
+	print("Tanggal", infowaktu[2], bulan[infowaktu[1]-1], infowaktu[0])
 	print("Harga Total Sebelum Diskon\t\t\t : Rp. ",jumlah)
 	print("Potongan Harga\t\t\t\t\t\t : Rp. ",diskon)
 	print("Harga Yang Harus Di Bayar\t\t\t : Rp. ",jumlahharga)
